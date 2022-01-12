@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sketch</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    <script src="libraries/p5.play.js"></script>
+    <script src = "https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src = "https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="js/Game.js"></script>
+    <script src="js/Player.js"></script>
+    <script src="js/Form.js"></script>
+  </head>
+
+  <body>
+    <script type="module">
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+    apiKey: "AIzaSyCyn5BKRfUXKPTb3wvUv41dNd10jRiIsxI",
+    authDomain: "aula-beatriz.firebaseapp.com",
+    databaseURL: "https://aula-beatriz-default-rtdb.firebaseio.com",
+    projectId: "aula-beatriz",
+    storageBucket: "aula-beatriz.appspot.com",
+    messagingSenderId: "377999375760",
+    appId: "1:377999375760:web:b81df31d28f4e9008c4715"
+  };
+
+      // Initialize Firebase
+      const app = firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="sketch.js"></script>
+  </body>
+</html>
